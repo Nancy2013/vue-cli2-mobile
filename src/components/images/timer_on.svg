@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="57px" viewBox="0 0 56 57" version="1.1">
+  <title>定时</title>
+  <defs>
+    <path d="M27.9949783,4 C15.8525451,4 6,13.8525451 6,25.9949783 C6,38.1474549 15.8525451,48 27.9949783,48 C40.1474549,48 50,38.1474549 50,25.9949783 C50,13.8525451 40.1474549,4 27.9949783,4 Z" id="path-1"></path>
+    <filter x="-23.9%" y="-17.0%" width="147.7%" height="147.7%" filterUnits="objectBoundingBox" id="filter-2">
+      <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+    </filter>
+    <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="44" height="44" fill="white">
+      <use xlink:href="#path-1"></use>
+    </mask>
+  </defs>
+  <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="画板" transform="translate(-297.000000, -368.000000)">
+      <g id="定时备份-2" transform="translate(297.000000, 368.000000)">
+        <g id="路径" stroke-dasharray="0,0">
+          <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+          <use stroke="#FFFFFF" mask="url(#mask-3)" stroke-width="1" fill="#14726C" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <path d="M27.96,14.9506836 C28.81,14.9806836 29.67,15.0706836 30.51,15.2106836 C30.614,15.3226836 30.718,15.4282836 30.75544,15.5326036 L30.77,15.6106836 L30.36,17.0406836 L30.25,17.2006836 C30.8416667,17.3090169 31.4125,17.4867947 31.968287,17.7108688 L32.3,17.8506836 L32.91,16.4006836 C33.81125,16.8469336 34.65125,17.4156836 35.4032031,18.0868359 L35.72,18.3806836 L34.7,19.5706836 C36.69,21.5506836 37.83,24.2606836 37.8801508,27.1006836 C37.91,32.7606836 33.46,37.3606836 27.94,37.4006836 C23.85,37.3906836 20.18,34.8206836 18.69,30.9106836 C17.2275,27.1081836 18.1415625,22.7828398 20.9687578,19.9274 L21.19,19.7106836 L20.04,18.3806836 C20.81,17.6806836 21.6565625,17.0802148 22.5729883,16.599375 L22.97,16.4006836 L23.62,17.8506836 C24.108,17.6266836 24.6152,17.4346836 25.13136,17.2798036 L25.52,17.1706836 L25.52,17.0406836 L25.15,15.6106836 C25.15,15.4806836 25.15,15.3506836 25.4,15.2106836 C26.25,15.0706836 27.1,14.9806836 27.96,14.9506836 Z M27.8633262,18.9073011 C23.4133262,18.9373011 19.8333262,22.6473011 19.8532428,27.2073011 C19.8733262,31.7673011 23.4933262,35.4373011 27.9433262,35.4273214 C30.0833262,35.4173011 32.1433262,34.5373011 33.6433262,32.9773011 C35.1533262,31.4173011 35.9933262,29.2973011 35.9733262,27.1073011 C35.9333262,22.5473011 32.3033262,18.8773011 27.8633262,18.9073011 Z M28.5812744,21.0267334 L28.8312744,28.0267334 L27.1712744,28.0267334 L27.4312744,21.0267334 L28.5812744,21.0267334 Z" id="定时" fill="#FFFFFF"></path>
+      </g>
+    </g>
+  </g>
+</svg>

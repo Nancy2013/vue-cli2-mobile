@@ -1,0 +1,390 @@
+/* base 样式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -khtml-user-select: none; /*早期浏览器*/
+  -moz-user-select: none; /*火狐*/
+  -ms-user-select: none; /*IE10*/
+  user-select: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+input,
+textarea {
+  user-select: auto; // 可输入
+  -webkit-appearance: none;
+  appearance: none; // 去除边框阴影
+}
+html {
+  font-size: @bl-font-size-base;
+  font-family: 'iconfont', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-variant: tabular-nums;
+  color: @bl-black;
+  background-color: @bl-body-background;
+  line-height: @bl-line-height-base;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/*clear default style*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*   margin-bottom: 0.5em; */
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+a,
+area,
+button,
+[role='button'],
+input:not([type='range']),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: inherit;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+  -webkit-appearance: listbox;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+/*input autofill fix*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important; /*autofill hack for chrome*/
+  -webkit-transition-delay: 9999s; /*autofill hack for safari*/
+  -webkit-transition: color 9999s ease-out, background-color 9999s ease-out; /*autofill hack for safari*/
+}
+/*input outline fix*/
+input,
+button,
+input:focus {
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+/* margin padding */
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr32 {
+  margin-right: 32px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mtb5 {
+  margin: 5px 0;
+}
+.mtb10 {
+  margin: 10px 0;
+}
+.mtb16 {
+  margin: 16px 0;
+}
+.mtb20 {
+  margin: 20px 0;
+}
+.mlr5 {
+  margin: 0 5px;
+}
+.mlr8 {
+  margin: 0 8px;
+}
+.mlr10 {
+  margin: 0 10px;
+}
+.mlr15 {
+  margin: 0 15px;
+}
+.mlr20 {
+  margin: 0 20px;
+}
+.m5 {
+  margin: 5px;
+}
+.m10 {
+  margin: 10px;
+}
+.m16 {
+  margin: 16px;
+}
+.m20 {
+  margin: 20px;
+}
+.pl5 {
+  padding-left: 5px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pl15 {
+  padding-left: 15px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pt5 {
+  padding-top: 5px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt16 {
+  padding-top: 16px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pr5 {
+  padding-right: 5px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.pr15 {
+  padding-right: 15px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pb5 {
+  padding-bottom: 5px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pb15 {
+  padding-bottom: 15px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.ptb5 {
+  padding: 5px 0;
+}
+.ptb10 {
+  padding: 10px 0;
+}
+.ptb15 {
+  padding: 15px 0;
+}
+.ptb20 {
+  padding: 20px 0;
+}
+.plr5 {
+  padding: 0 5px;
+}
+.plr10 {
+  padding: 0 10px;
+}
+.plr15 {
+  padding: 0 15px;
+}
+.plr20 {
+  padding: 0 20px;
+}
+.p5 {
+  padding: 5px;
+}
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.p15 {
+  padding: 15px;
+}
+
+.disabled {
+  color: @bl-disabled-color;
+}
+.error {
+  color: @bl-error-color;
+}
+.actived {
+  background: @theme-color !important;
+}
+.cursor {
+  cursor: pointer;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .flex-item {
+    flex: 1;
+  }
+}
+.opacity {
+  opacity: 0.4;
+}

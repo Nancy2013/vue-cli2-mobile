@@ -1,0 +1,17 @@
+// 使用 px 转 vm 功能的副作用    问题：content会引起部分浏览器下，图片不会显示 所以要加该样式
+img {
+  content: initial !important;
+}
+
+#appview {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  margin-top:constant(safe-area-inset-top);
+  margin-top:env(safe-area-inset-top);
+  &.hasH5bar {
+    padding-top: 44px;
+  }
+}

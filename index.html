@@ -1,0 +1,30 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-06-26 17:37:54
+ * @LastEditTime: 2021-12-18 14:39:46
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,"
+    />
+    <title>mobile-template</title>
+    <% if (process.env.NODE_ENV !== 'production' &&
+    htmlWebpackPlugin.options.platform === 'dna') { %>
+    <script src="static/profile.js"></script>
+    <% } %> <% if (process.env.NODE_ENV === 'production' &&
+    htmlWebpackPlugin.options.platform === 'dna') { %>
+    <script src="../errors.js"></script>
+    <% } %>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
